@@ -1,0 +1,31 @@
+# bio.sam
+
+Clojure interface to SAM-JDK. Just at proof of concept stage, provides function
+to read SAM/BAM files and return lazy-seq of SAMRecord objects.
+
+## Usage
+
+(use '[bio.sam.core :only (read-sam)])
+
+(def s (read-sam "examples/toy.sam"))
+
+(map (memfn getReadString) s)
+
+## Installation
+
+FIXME: write
+
+## See also
+
+http://picard.sourceforge.net/
+
+## License
+
+Copyright (C) 2010, Ray Miller <ray@1729.org.uk>.
+
+THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS ECLIPSE
+PUBLIC LICENSE, <http://www.eclipse.org/org/documents/epl-v10.php>.
+
+ANY USE, REPRODUCTION OR DISTRIBUTION OF THE PROGRAM CONSTITUTES
+RECIPIENT’S ACCEPTANCE OF THIS AGREEMENT.
+
